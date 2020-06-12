@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Address Book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>Contacts</h1>
+    <table id="contacts-table">
+        <tr id="contacts-head">
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <form id="contacts-form">
+        <div id="form">
+            <label>First name:</label>
+            <input type="text" name="first_name" placeholder="Parth" required /><br /><br />
+      
+            <label>Last name:</label>
+            <input type="text" name="last_name" placeholder="Amin" required /><br /><br />
+
+            <label>Email:</label>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="abc@example.com" required /><br /><br />
+        
+            <label>Phone Number:</label>
+            <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required /><br /><br />
+        </div>
+
+        <div class="buttons">
+            <input type="button" id="discardButton" value="Discard" />
+            <input type="submit" id="saveButton" value="Save" />
+            </div>
+        </div>
+
+        <input type="hidden" name="id_entry" value="0" />
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

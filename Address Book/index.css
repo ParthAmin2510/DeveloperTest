@@ -1,0 +1,25 @@
+body{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+a{
+    color: blue;
+    cursor: pointer;
+}
+
+h1{
+    color: darkblue;
+    margin-left: 12%;
+}
+
+th{
+    padding-right: 20px;
+}
+
+#form{
+    margin-top: 10px;
+}
+
+.buttons{
+    display: inline-block;
+}
